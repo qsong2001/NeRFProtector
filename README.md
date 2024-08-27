@@ -1,14 +1,14 @@
-# OCC-NeRF
+# NeRFProtector
 
-This is the repository that contains source code for the project page of [CopyRNeRF](https://luo-ziyuan.github.io/copyrnerf/).
+This is the repository that contains source code for the project page of [NeRFProtector](https://qsong2001.github.io/NeRFProtector/).
 
-If you find CopyRNeRF useful for your work please cite:
+If you find NeRFProtector useful for your work, please cite:
 ```
-@inproceedings{luo2023copyrnerf,
-  author    = {Ziyuan Luo and Qing Guo and Ka Chun Cheung and Simon See and Renjie Wan},
-  title     = {Copy{RN}e{RF}: Protecting the CopyRight of Neural Radiance Fields},
-  booktitle   = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year      = {2023},
+@inproceedings{song2024protecting,
+  title={Protecting NeRFs' Copyright via Plug-And-Play Watermarking Base Model},
+  author={Song, Qi and Luo, Ziyuan and Cheung, Ka Chun and See, Simon and Wan, Renjie},
+  booktitle={ECCV},
+  year={2024}
 }
 ```
 
