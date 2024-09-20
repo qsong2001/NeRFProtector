@@ -82,7 +82,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Protecting NeRFs’ Copyright via Plug-And-Play Watermarking Base Model<br>
+          <h1 class="title is-1 publication-title">Protecting NeRFs’ Copyright via Plug-and-Play Watermarking Base Model<br>
             <small>
               <span style="font-size: 60%;">ECCV 2024</span>
             </small>
@@ -161,7 +161,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Neural Radiance Fields (NeRFs) have become a key method for 3D scene representation. With the rising prominence and influence of NeRF, safeguarding its intellectual property has become increasingly important. This paper introduces a plug-and-play method to protect NeRF's copyright during its creation. We propose utilizing a pre-trained watermarking base model, enabling NeRF creators to embed binary messages directly while creating their NeRF. Our plug-and-play property ensures that NeRF creators can flexibly choose NeRF variants without excessive modifications. Leveraging our newly designed progressive distillation, we demonstrate performance on par with several leading-edge neural rendering methods.
+Neural Radiance Fields (NeRFs) have become a key method for 3D scene representation. With the rising prominence and influence of NeRF, safeguarding its intellectual property has become increasingly important. This paper introduces a Plug-and-Play method to protect NeRF's copyright during its creation. We propose utilizing a pre-trained watermarking base model, enabling NeRF creators to embed binary messages directly while creating their NeRF. Our Plug-and-Play property ensures that NeRF creators can flexibly choose NeRF variants without excessive modifications. Leveraging our newly designed progressive distillation, we demonstrate performance on par with several leading-edge neural rendering methods.
           </p>
         </div>
       </div>
@@ -183,7 +183,7 @@ Neural Radiance Fields (NeRFs) have become a key method for 3D scene representat
                 <div class="content has-text-justified">
                   <p>
 
-                    Our plug-and-play method to watermark NeRF during its creation. (1) Building a watermarking base model: The watermarking base model \( \mathcal{F} \) can be sourced from a third party. We implement a HiDDeN framework to get the pre-trained message extractor as our watermarking base model \( \mathcal{F} \). During the training, the encoder \( \mathcal{E} \) encodes a randomly selected 48-kit message \( \mathbf{m} \) and cover image \( \mathbf{I}_o \) and outputs a watermarked image \( \mathbf{I}_{en} \). Then the message extractor \( \mathcal{F} \) extracts embedded message \( \hat{\mathbf{m}} \) from the watermarked image. Message encoder \( \mathcal{E} \) is discarded after building watermarking base model \( \mathcal{F} \). (2) NeRF creation with message distillation: NeRF creators first fix a copyright message \( \mathbf{m} \), then employ this base model \( \mathcal{F} \) to embed selected watermarks to NeRFs during the creation process via Progressive Global Rendering (PGR) and message distillation. When the optimization of NeRF is finalized, creators immediately obtain a watermarked NeRF. (3) Extracting watermark: Subsequently, they can utilize the base model \( \mathcal{F} \) to retrieve binary watermarks from the rendered images, asserting their ownership.
+                    Our Plug-and-Play method to watermark NeRF during its creation. (1) Building a watermarking base model: The watermarking base model \( \mathcal{F} \) can be sourced from a third party. We implement a HiDDeN framework to get the pre-trained message extractor as our watermarking base model \( \mathcal{F} \). During the training, the encoder \( \mathcal{E} \) encodes a randomly selected 48-kit message \( \mathbf{m} \) and cover image \( \mathbf{I}_o \) and outputs a watermarked image \( \mathbf{I}_{en} \). Then the message extractor \( \mathcal{F} \) extracts embedded message \( \hat{\mathbf{m}} \) from the watermarked image. Message encoder \( \mathcal{E} \) is discarded after building watermarking base model \( \mathcal{F} \). (2) NeRF creation with message distillation: NeRF creators first fix a copyright message \( \mathbf{m} \), then employ this base model \( \mathcal{F} \) to embed selected watermarks to NeRFs during the creation process via Progressive Global Rendering (PGR) and message distillation. When the optimization of NeRF is finalized, creators immediately obtain a watermarked NeRF. (3) Extracting watermark: Subsequently, they can utilize the base model \( \mathcal{F} \) to retrieve binary watermarks from the rendered images, asserting their ownership.
                   </p>
                 </div>
             </div>
